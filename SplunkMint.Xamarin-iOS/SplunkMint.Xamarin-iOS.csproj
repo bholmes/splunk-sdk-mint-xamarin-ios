@@ -12,6 +12,8 @@
     <ReleaseVersion>4.0.1</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <Description>SplunkMint-iOS Objective-C bindings</Description>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

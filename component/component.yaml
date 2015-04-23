@@ -1,0 +1,30 @@
+%YAML 1.2
+---
+name: Splunk MINT SDK for iOS
+id: splunk-mint-ios
+version: "1.0"
+publisher: Splunk Inc.
+publisher-url: https://mint.splunk.com/
+src-url: https://github.com/splunk/splunk-sdk-mint-xamarin-ios
+summary: Monitor and gain insights into all of your mobile apps
+getting-started: GettingStarted.md
+details: Details.md
+license: License.md
+icons: 
+  - splunk-mint-ios_128x128.png
+  - splunk-mint-ios_512x512.png
+screenshots: 
+  - screenshots/mint-prod-tour-analytics.png
+libraries: 
+  ios: 
+    - ../SplunkMint.Xamarin-iOS/bin/Release/SplunkMint.Xamarin-iOS.dll
+  ios-unified:
+    - ../SplunkMint.XamarinUnified-iOS/bin/Release/SplunkMint.Xamarin-iOS.dll
+samples:
+  - name: "SplunkMint ClientApp"
+    path: ../SplunkMint-iOS.ClientApp.sln
+    configuration: "Release|iPhone"
+build:
+  - path: ../SplunkMint.Xamarin-iOS.sln
+    configuration: "Release|iPhone"
+...

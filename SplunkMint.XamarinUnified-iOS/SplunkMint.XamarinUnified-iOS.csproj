@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -53,8 +54,10 @@
     <Compile Include="..\SplunkMint.Xamarin-iOS\Extra.cs">
       <Link>Extra.cs</Link>
     </Compile>
-    <Compile Include="..\SplunkMint.Xamarin-iOS\StructsAndEnums.cs">
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="..\SplunkMint.Xamarin-iOS\StructsAndEnums.cs">
       <Link>StructsAndEnums.cs</Link>
-    </Compile>
+    </ObjcBindingCoreSource>
   </ItemGroup>
 </Project>

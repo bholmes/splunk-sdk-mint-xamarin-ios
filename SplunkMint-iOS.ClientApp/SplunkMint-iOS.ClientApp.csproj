@@ -10,6 +10,8 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>SplunkMintiOSClientApp</AssemblyName>
     <ReleaseVersion>1.0.0.0</ReleaseVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,6 +29,7 @@
     <MtouchI18n>
     </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -117,12 +120,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
+    <InterfaceDefinition Include="SplunkMint_iOS.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SplunkMint.Xamarin-iOS\SplunkMint.Xamarin-iOS.csproj">
       <Project>{9725B78E-A3C0-4F65-ADAE-0392BBB670FA}</Project>
       <Name>SplunkMint.Xamarin-iOS</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <InterfaceDefinition Include="SplunkMint_iOS.storyboard" />
   </ItemGroup>
 </Project>

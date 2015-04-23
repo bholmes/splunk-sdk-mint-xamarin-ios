@@ -106,3 +106,6 @@ namespace SplunkMint
 		EmergencyLogLevel = 90
 	}
 }
+
+namespace Foundation {}
+namespace MonoTouch.Foundation {}

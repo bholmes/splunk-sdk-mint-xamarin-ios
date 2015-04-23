@@ -34,6 +34,16 @@ namespace SplunkMint
 	public delegate void TransactionStopResultBlock (TransactionStopResult transactionStopResult);
 	public delegate void RemoteSettingsBlock (bool succeed, NSError error, RemoteSettingsData remoteSettingsData);
 
+	[BaseType (typeof (NSObject))]
+	public partial interface XamarinHelper {
+
+		[Static, Export ("xamarinArchitecture:")]
+		void XamarinArchitecture(string architecture);
+
+		[Static, Export ("xamarinVersion:")]
+		void XamarinVersion(string version);
+	}
+
 	[BaseType (typeof (NSError))]
 	public partial interface SPLJSONModelError {
 
@@ -1729,6 +1739,13 @@ namespace SplunkMint
 		/// <param name="url">The URL.</param>
 		[Export ("addURLToBlackList:")]
 		void AddURLToBlacklist (string url);
+
+		/// <summary>
+		/// The list of URLs that have been blacklisted from network interception.
+		/// </summary>
+		/// <returns>The URLs.</returns>
+		[Export ("blacklistUrls")]
+		string[] BlacklistUrls();
 
 		/// <summary>
 		/// Log an event with message and log level.
